@@ -111,3 +111,9 @@ table #minesweeper td {
   }
 
 }
+
+@media (max-height: 750px) {
+  #show-minesweeper {
+    transform: translateY(56px);
+  }
+}
