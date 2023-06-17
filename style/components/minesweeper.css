@@ -109,5 +109,10 @@ table #minesweeper td {
     width: 95%;
     transform: scale(0.95);
   }
+}
 
+@media (max-height: 750px) {
+  #show-minesweeper {
+    transform: translateY(56px);
+  }
 }
