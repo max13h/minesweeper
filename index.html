@@ -7,40 +7,36 @@
   <title>Minesweeper</title>
   <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
 
-  <link rel="stylesheet" href="minesweeper.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
   <h1>Minesweeper by max13.h</h1>
-  <div id="show-menu">
-    <div id="menu">
-      <h2>Select your difficulty</h2>
-      <div class="difficulties">
-        <button type="button" id="easy">EASY</button>
-        <button type="button" id="medium">MEDIUM</button>
-        <button type="button" id="hard">HARD</button>
-      </div>
+  <div id="menu">
+    <h2>Select your difficulty</h2>
+    <div class="difficulties">
+      <button type="button" id="easy">EASY</button>
+      <button type="button" id="medium">MEDIUM</button>
+      <button type="button" id="hard">HARD</button>
     </div>
   </div>
-  <table id="show-minesweeper" class="disable">
-    <thead class="game-info">
-      <tr>
-        <th>
-          <span class="mine-bg"></span> Mines locked: <span id="nb-bombs-flagged">0</span> / <span
-            id="nb-bomb-in-game">10</span>
-        </th>
-        <th>
-          <div id="timer"></div>
-        </th>
-        <th><button type="button" id="restart">
-            <i class="fa-solid fa-rotate-right" style="color: #000000;" title="Restart"></i>
-          </button></th>
-      </tr>
-    </thead>
-    <tbody id="minesweeper">
-
-    </tbody>
-  </table>
+  <div id="show-minesweeper">
+    <div class="game-info">
+      <p>
+        <span class="mine-bg"></span> Mines locked: <span id="nb-bombs-flagged">0</span> / <span
+          id="nb-bomb-in-game">10</span>
+      </p>
+      <div id="timer"></div>
+      <button type="button" id="restart">
+        <i class="fa-solid fa-rotate-right" style="color: #000000;" title="Restart"></i>
+      </button>
+    </div>
+    <table>
+      <tbody id="minesweeper">
+      </tbody>
+    </table>
+    <h2 id="win-or-lose">Reveal tiles, but watch out for mines !</h2>
+  </div>
 
 
   <script type="text/javascript" src="lib/minesweeper.js"></script>
