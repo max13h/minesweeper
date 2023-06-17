@@ -1,0 +1,113 @@
+#show-minesweeper {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+table {
+  width: 450px;
+  height: 470px;
+  background-color: black;
+  border: 3px solid black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+table #minesweeper {
+  background-color: #585858;
+}
+
+table #minesweeper td {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.game-info {
+  border: 3px solid black;
+  background-color: rgba(255, 255, 255, 0.596);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  padding: 0.5rem;
+}
+
+.game-info p {
+  display: flex;
+  align-items: center;
+}
+
+.mine-bg {
+  display: inline-flex;
+  background-image: url("../../img/mine.png");
+  background-position: center;
+  background-size: cover;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#timer {
+  font-weight: bolder;
+}
+
+#restart {
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  user-select: none;
+  font-weight: bolder;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#restart i {
+  transition: all 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#restart i:hover {
+  transform: rotate(360deg);
+}
+
+
+
+@media (max-width: 768px) {
+  table {
+    width: 315px;
+    height: 329px;
+  }
+
+  table #minesweeper td {
+    width: 12px;
+    height: 12px;
+  }
+
+  .game-info {
+    width: 66%;
+  }
+}
+
+@media (max-width: 576px) {
+  .game-info {
+    width: 95%;
+    transform: scale(0.95);
+  }
+
+}
