@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minesweeper</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+
+  <link rel="stylesheet" href="minesweeper.css">
+</head>
+
+<body>
+  <h1>Minesweeper by max13.h</h1>
+  <div id="show-menu">
+    <div id="menu">
+      <h2>Select your difficulty</h2>
+      <div class="difficulties">
+        <button type="button" id="easy">EASY</button>
+        <button type="button" id="medium">MEDIUM</button>
+        <button type="button" id="hard">HARD</button>
+      </div>
+    </div>
+  </div>
+  <table id="show-minesweeper" class="disable">
+    <thead class="game-info">
+      <tr>
+        <th>
+          <span class="mine-bg"></span> Mines locked: <span id="nb-bombs-flagged">0</span> / <span
+            id="nb-bomb-in-game">10</span>
+        </th>
+        <th>
+          <div id="timer"></div>
+        </th>
+        <th><button type="button" id="restart">
+            <i class="fa-solid fa-rotate-right" style="color: #000000;" title="Restart"></i>
+          </button></th>
+      </tr>
+    </thead>
+    <tbody id="minesweeper">
+
+    </tbody>
+  </table>
+
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
